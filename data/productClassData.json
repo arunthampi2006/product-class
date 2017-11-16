@@ -1,0 +1,42 @@
+[
+  {
+    "id":"prdCls_1",
+    "name":"Loan",
+    "description":"test data for loan",
+    "status":true,
+    "createdOn":"11 Nov 2017",
+    "createdBy":"sachin",
+    "modifiedOn":"11 Nov 2017",
+    "modifiedBy":"Rahul"
+  },
+  {
+    "id":"prdCls_2",
+    "name":"Loan2",
+    "description":"test data for loan2",
+    "status":false,
+    "createdOn":"14 Nov 2017",
+    "createdBy":"sachin",
+    "modifiedOn":"15 Nov 2017",
+    "modifiedBy":"Rahul"
+  },
+  {
+    "id":"prdCls_3",
+    "name":"Credit Card",
+    "description":"test data for Credit Card",
+    "status":true,
+    "createdOn":"09 Nov 2017",
+    "createdBy":"Rahul",
+    "modifiedOn":"10 Nov 2017",
+    "modifiedBy":"Sachin"
+  },
+  {
+    "id":"prdCls_4",
+    "name":"Credit Card",
+    "description":"test data for Credit Card 4",
+    "status":false,
+    "createdOn":"07 Nov 2017",
+    "createdBy":"Rahul",
+    "modifiedOn":"10 Nov 2017",
+    "modifiedBy":"Sachin"
+  }
+]

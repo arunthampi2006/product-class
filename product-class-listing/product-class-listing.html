@@ -1,0 +1,46 @@
+<link rel="import" href="product-class-item.html">
+<link rel="import" href="../behaviors/redux-product-class-mixin.html">
+
+<dom-module id="product-class-listing">
+  <template>
+    <iron-ajax url="/data/productClassData.json" last-response="{{prdCls}}" auto></iron-ajax>
+    ---------- [[prdCls]]
+    <iron-data-table items="[[prdCls]]">
+      <data-table-column name="Name" width="50px" flex="0">
+        <template>[[Name]]</template>
+      </data-table-column>
+      <data-table-column name="Description">
+        <template>[[Description]]</template>
+      </data-table-column>
+      <data-table-column name="status">
+        <template>[[status]]</template>
+      </data-table-column>
+      <data-table-column name="created On">
+        <template>[[createdOn]]</template>
+      </data-table-column>
+      <data-table-column name="created By">
+        <template>[[createdBy]]</template>
+      </data-table-column>
+      <data-table-column name="modified On">
+        <template>[[modifiedOn]]</template>
+      </data-table-column>
+      <data-table-column name="modified By">
+        <template>[[modifiedBy]]</template>
+      </data-table-column>
+    </iron-data-table>
+    --- product-class-listing
+  </template>
+  <script>
+    class productClassListing extends ReduxProductClassMixinBehavior(Polymer.Element){
+      static get is(){
+        return "product-class-listing"
+      }
+      static get properties(){
+        return{
+
+        }
+      }
+    }
+    customElements.define(productClassListing.is, productClassListing)
+  </script>
+</dom-module>

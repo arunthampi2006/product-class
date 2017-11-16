@@ -1,0 +1,17 @@
+<link rel="import" href="product-attribute-item.html">
+<link rel="import" href="../behaviors/redux-product-class-mixin.html">
+
+<dom-module id="product-attribute-listing">
+  <template>
+    ---- product Attribute Listing ----
+    <product-attribute-item></product-attribute-item>
+  </template>
+  <script>
+    class productAttributeListing extends ReduxProductClassMixinBehavior(Polymer.Element){
+      static get is(){
+        return "product-attribute-listing"
+      }
+    }
+    customElements.define(productAttributeListing.is,productAttributeListing)
+  </script>
+</dom-module>

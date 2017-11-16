@@ -1,0 +1,30 @@
+<script>
+  const productClassIntialState = {
+    productClassData:{},
+    productAttributeData:{}
+  }
+  const productClassAppReducer = (state, action)=>{
+    state = state || productClassIntialState
+    let productClassObj ={
+      productClassData:productClassDataReducer(state.productClassData, action),
+      productAttributeData:productAttributeDataReducer(state.productAttributeData,action)
+    }
+  }
+  const productClassDataReducer =(state, action)=>{
+    switch(action.type){
+      // case "test": return Object.assign({},state,{[action.value.id]:action.value})
+      default: return state;
+    }
+  }
+  const productAttributeDataReducer = (state,action)=>{
+    switch(action.type){
+
+      default: return state;
+    }
+  }
+  const productClassStore = Redux.createStore(productClassAppReducer, productClassIntialState,
+    Redux.compose(window.devToolsExtension ? window.devToolsExtension() : v => v)
+  )
+  ReduxProductClassMixinBehavior = PolymerRedux(productClassStore)
+
+</script>

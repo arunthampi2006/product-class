@@ -30,17 +30,20 @@
     "iron-pages": "PolymerElements/iron-pages#^2.0.0",
     "paper-dialog-scrollable": "PolymerElements/paper-dialog-scrollable#^2.1.0",
     "paper-radio-button": "PolymerElements/paper-radio-button#^2.0.0",
-    "paper-dropdown-menu":  "PolymerElements/paper-dropdown-menu#^2.0.0"
+    "paper-dropdown-menu": "PolymerElements/paper-dropdown-menu#^2.0.0",
+    "iron-data-table": "flytxt/iron-data-table#v1.0.3",
+    "iron-ajax": "^2.0.6"
   },
   "devDependencies": {
     "web-component-tester": "Polymer/web-component-tester#^6.0.0",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
   },
   "resolutions": {
-    "webcomponentsjs": "^1.0.0",
+    "webcomponentsjs": "^v1.0.2",
     "polymer": "^2.0.0",
-    "iron-iconset-svg": "1 - 2",
-    "paper-ripple": "1 - 2",
-    "paper-icon-button": "^2.0.0"
+    "iron-ajax": "^2.0.2",
+    "paper-input": "^1.1.5",
+    "paper-icon-button": "^1.0.7",
+    "iron-data-table": "v1.0.3"
   }
 }

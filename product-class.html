@@ -1,11 +1,25 @@
+<link rel="import" href="components-imports.html">
+<link rel="import" href="behaviors/redux-product-class-mixin.html">
+
 <dom-module id="product-class">
   <template>
-    fsfshfhsfhshfhshf
+    product Class --
+
+    <product-class-listing></product-class-listing>
+
+-----------XX---------
+    <!-- <product-attribute-listing></product-attribute-listing>
+
+    <flytxt-modal fm-width="500" fm-height="100"></flytxt-modal> -->
   </template>
   <script>
-   class productClass extends Polymer.Element{
+   class productClass extends ReduxProductClassMixinBehavior(Polymer.Element){
      static get is(){
        return "product-class"
+     }
+     static get properties(){
+       return{
+       }
      }
    }
    customElements.define(productClass.is,productClass)

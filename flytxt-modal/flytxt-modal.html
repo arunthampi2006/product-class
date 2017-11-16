@@ -1,0 +1,39 @@
+<dom-module id="flytxt-modal">
+  <style>
+
+  </style>
+  <template>
+    <!-- <div id="flytxtModal">
+    </div> -->
+    <paper-dialog id="dialog">
+      <h2>Header</h2>
+      <paper-dialog-scrollable>
+        Lorem ipsum...
+      </paper-dialog-scrollable>
+      <div class="buttons">
+        <paper-button dialog-dismiss>Cancel</paper-button>
+        <paper-button dialog-confirm autofocus>Accept</paper-button>
+      </div>
+    </paper-dialog>
+  </template>
+  <script>
+    class flytxtModal extends Polymer.Element{
+      static get is(){
+        return "flytxt-modal"
+      }
+      static get properties(){
+        return {
+          fmWidth:{
+            type:String,
+            value:340
+          },
+          fmHeight:{
+            type:String,
+            value:500
+          }
+        }
+      }
+    }
+    customElements.define(flytxtModal.is, flytxtModal)
+  </script>
+</dom-module>
